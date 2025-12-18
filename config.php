@@ -96,6 +96,10 @@ define('REQUIRE_EMAIL_VERIFICATION', false);
 define('FREE_TIER_ENABLED', true);
 
 // Pricing Plans
+// Stripe Price IDs can be set via environment variables for deployment
+$stripePriceIdPro = getenv('STRIPE_PRICE_ID_PRO') ?: 'price_YOUR_PRO_PRICE_ID_HERE';
+$stripePriceIdEnterprise = getenv('STRIPE_PRICE_ID_ENTERPRISE') ?: 'price_YOUR_ENTERPRISE_PRICE_ID_HERE';
+
 define('PRICING_PLANS', [
     'free' => [
         'name' => 'Free',
@@ -112,7 +116,7 @@ define('PRICING_PLANS', [
         'price' => 19,
         'currency' => 'USD',
         'billing_cycle' => 'month',
-        'stripe_price_id' => 'price_YOUR_PRO_PRICE_ID_HERE',
+        'stripe_price_id' => $stripePriceIdPro,
         'item_limit' => 50,
         'contact_limit' => 200,
         'features' => ['All features included']
@@ -122,7 +126,7 @@ define('PRICING_PLANS', [
         'price' => 49,
         'currency' => 'USD',
         'billing_cycle' => 'month',
-        'stripe_price_id' => 'price_YOUR_ENTERPRISE_PRICE_ID_HERE',
+        'stripe_price_id' => $stripePriceIdEnterprise,
         'item_limit' => null, // unlimited
         'contact_limit' => null, // unlimited
         'features' => ['All features included']
