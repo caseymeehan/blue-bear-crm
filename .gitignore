@@ -1,0 +1,51 @@
+# Composer
+vendor/
+# composer.lock is INCLUDED to ensure exact dependency versions
+
+# Database
+/database/saas.db
+/database/*.db
+
+# Logs
+*.log
+error_log
+debug.log
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# Uploaded Files
+/uploads/avatars/*
+!/uploads/avatars/.gitkeep
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Sensitive Configuration (if you split config)
+config.local.php
+
+# Cache
+cache/
+*.cache
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
+
+# Distribution Packages (for seller's use - don't commit packages)
+PHP-SaaS-Template-*.zip
+*.zip

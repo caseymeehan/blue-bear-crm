@@ -1,0 +1,179 @@
+COMMERCIAL LICENSE
+
+Copyright (c) 2025 BZ Group LLC (dba Blazing Zebra, Casey Meehan)
+
+GRANT OF LICENSE:
+This software ("PHP SaaS Template") is licensed, not sold. By purchasing this 
+software, you are granted a non-exclusive, non-transferable license to use this 
+software for unlimited commercial projects and applications.
+
+PERMITTED USES:
+✓ Use the software for unlimited commercial projects and applications
+✓ Modify the source code to suit your needs for any project
+✓ Deploy the software to production servers for multiple projects
+✓ Create derivative works for your own use
+✓ Use the software for client work (unlimited clients and projects)
+
+PROHIBITED USES:
+✗ Resell, redistribute, or sublicense the software itself
+✗ Share the source code with others who have not purchased a license
+✗ Include the software in a template, theme, or starter kit sold to others
+✗ Offer the software as a SaaS template or boilerplate to others
+✗ Allow others to use your purchased copy
+✗ Sell or give away the source code or template itself
+
+UNLIMITED PROJECT USE:
+One license allows you to use this software for unlimited commercial projects. 
+You may build as many SaaS applications, products, or client projects as you wish 
+with a single purchase. However, you may not resell, redistribute, or share the 
+source code/template itself with others.
+
+NO WARRANTY:
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
+SOFTWARE.
+
+INTENDED USE - LEARNING TOOL:
+This software is provided as a LEARNING TOOL and starter template. It is intended 
+to help developers understand and build SaaS applications, but it is NOT guaranteed 
+to be production-ready without additional security measures and professional review.
+
+SECURITY DISCLAIMER AND BUYER RESPONSIBILITY:
+If you choose to use this software in production environments, YOU ARE SOLELY 
+RESPONSIBLE for implementing appropriate additional security measures, including 
+but not limited to:
+- Comprehensive security audits and penetration testing
+- Input validation and sanitization beyond what is provided
+- Rate limiting and DDoS protection
+- Security monitoring, logging, and intrusion detection
+- Regular security updates and patches
+- Data encryption at rest and in transit
+- Compliance with applicable data protection regulations (GDPR, CCPA, HIPAA, etc.)
+- Secure configuration of all third-party services
+- Regular security reviews and vulnerability assessments
+
+THE LICENSOR SHALL NOT BE LIABLE FOR ANY DATA BREACHES, DATA LEAKS, SECURITY 
+VULNERABILITIES, UNAUTHORIZED ACCESS, OR ANY OTHER SECURITY-RELATED ISSUES 
+ARISING FROM THE USE OF THIS SOFTWARE.
+
+COMPREHENSIVE LIMITATION OF LIABILITY:
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW:
+
+1. LIMITATION OF LIABILITY: In no event shall the licensor's total liability to 
+you for all damages, losses, and causes of action (whether in contract, tort, 
+including negligence, or otherwise) exceed the amount paid by you for the license 
+to this software.
+
+2. EXCLUSION OF DAMAGES: The licensor shall not be liable for any indirect, 
+incidental, special, consequential, or punitive damages, including but not limited 
+to loss of profits, loss of data, loss of business, business interruption, loss of 
+revenue, loss of customers, or any other commercial damages or losses, even if 
+advised of the possibility of such damages.
+
+3. NO GUARANTEE OF FUNCTIONALITY: The software is provided as-is with no guarantee 
+that it will meet your requirements, operate without interruption, be error-free, 
+or be compatible with any particular infrastructure, hosting environment, or 
+third-party services.
+
+4. THIRD-PARTY SERVICES: This software integrates with third-party services 
+(Google OAuth, Stripe, etc.). The licensor is not responsible for any issues, 
+outages, changes, discontinuation of these third-party services, or any costs, 
+damages, or losses resulting from their use or unavailability.
+
+5. REGULATORY COMPLIANCE: You are solely responsible for ensuring that your use 
+of this software complies with all applicable laws, regulations, and industry 
+standards in your jurisdiction, including but not limited to GDPR, CCPA, HIPAA, 
+PCI-DSS, SOC 2, and any other data protection, privacy, security, or compliance 
+regulations.
+
+6. BUSINESS USE AT YOUR OWN RISK: You acknowledge that using this software for 
+commercial purposes, processing customer data, accepting payments, or any other 
+business operations is done entirely at your own risk. The licensor makes no 
+representations about the software's suitability for any particular business use 
+or commercial purpose.
+
+7. DATA LOSS AND CORRUPTION: The licensor shall not be liable for any data loss, 
+data corruption, database failures, or unauthorized access to data stored or 
+processed by this software. You are responsible for implementing appropriate 
+backup, disaster recovery, and data protection procedures.
+
+8. UPTIME AND AVAILABILITY: The licensor makes no guarantees regarding uptime, 
+availability, performance, scalability, or reliability of applications built using 
+this software.
+
+9. MODIFICATIONS: Any modifications you make to the software are your sole 
+responsibility. The licensor is not liable for any issues, bugs, vulnerabilities, 
+or damages arising from modified code.
+
+10. PROFESSIONAL ADVICE: This software does not constitute legal, financial, 
+security, compliance, or professional advice. You should consult appropriate 
+professionals (including security experts, lawyers, and compliance specialists) 
+before deploying this software in production environments.
+
+11. TESTING RESPONSIBILITY: You are responsible for thoroughly testing this 
+software in your specific environment and use case before deploying to production. 
+The licensor provides no guarantees that testing was performed for your particular 
+use case.
+
+12. CUSTOMER LIABILITIES: You are solely responsible for any liabilities, claims, 
+or damages arising from your customers' use of applications you build with this 
+software.
+
+SUPPORT:
+Support is provided on a best-effort basis. No guaranteed response times or 
+service levels are implied. The licensor reserves the right to limit or discontinue 
+support at any time.
+
+UPDATES:
+Updates and improvements may be provided at the discretion of the licensor. 
+Access to updates is not guaranteed after purchase. The licensor may discontinue 
+development or support at any time without notice.
+
+TERMINATION:
+This license is effective until terminated. Your rights under this license will 
+terminate automatically without notice if you fail to comply with any term of 
+this license. Upon termination, you must immediately cease all use of the software 
+and destroy all copies in your possession.
+
+GOVERNING LAW:
+This license shall be governed by and construed in accordance with the laws of 
+Maine, USA, without regard to its conflict of law provisions. Any disputes arising 
+from this license shall be resolved in the courts of Maine, USA.
+
+CONTACT:
+For questions about this license or to purchase additional licenses, contact:
+hello@blazingzebra.ai
+
+---
+
+THIRD-PARTY LICENSES:
+This software includes third-party libraries and components that are subject to 
+their own licenses. See the vendor/ directory for details on included dependencies 
+and their respective licenses. You are responsible for complying with all 
+third-party license terms.
+
+---
+
+ACCEPTANCE OF TERMS:
+BY PURCHASING, DOWNLOADING, INSTALLING, OR USING THIS SOFTWARE, YOU ACKNOWLEDGE 
+THAT YOU HAVE READ THIS LICENSE AGREEMENT, UNDERSTAND IT, AND AGREE TO BE BOUND 
+BY ITS TERMS AND CONDITIONS. 
+
+IF YOU DO NOT AGREE TO THESE TERMS, DO NOT USE THIS SOFTWARE AND CONTACT US FOR 
+A REFUND WITHIN 14 DAYS OF PURCHASE.
+
+YOU SPECIFICALLY ACKNOWLEDGE AND AGREE THAT:
+- This is a learning tool and starter template, not guaranteed production-ready software
+- You are solely responsible for security, compliance, data protection, and proper implementation
+- The licensor has no liability for damages, losses, security incidents, or data breaches
+- You will conduct appropriate security reviews and professional audits before production use
+- You accept all risks associated with using this software in any capacity
+- You are responsible for all customer-facing liabilities and regulatory compliance
+- You have read and understood all limitations and disclaimers in this agreement
+
+This license represents the complete agreement between you and the licensor 
+concerning the software and supersedes all prior agreements and representations.
