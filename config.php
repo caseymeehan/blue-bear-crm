@@ -7,7 +7,13 @@
 require_once __DIR__ . '/vendor/autoload.php';
 
 // Database configuration
-define('DB_PATH', __DIR__ . '/database/saas.db');
+// Use Railway volume mount path if available, otherwise use local database folder
+$railwayVolumePath = '/app/data';
+if (is_dir($railwayVolumePath) && is_writable($railwayVolumePath)) {
+    define('DB_PATH', $railwayVolumePath . '/saas.db');
+} else {
+    define('DB_PATH', __DIR__ . '/database/saas.db');
+}
 
 // Auto-initialize database if it doesn't exist (Railway deployment support)
 if (!file_exists(DB_PATH) || filesize(DB_PATH) === 0) {
