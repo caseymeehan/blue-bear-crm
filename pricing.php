@@ -458,7 +458,7 @@ $plans = PRICING_PLANS;
                 
                 <div class="plan-name">Enterprise</div>
                 <div class="plan-price">
-                    $<?php echo $plans['enterprise']['price']; ?>
+                    $<?php echo number_format($plans['enterprise']['price'], 2); ?>
                     <small>/month</small>
                 </div>
                 <div class="plan-billing">For power users</div>

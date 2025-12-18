@@ -123,7 +123,7 @@ define('PRICING_PLANS', [
     ],
     'enterprise' => [
         'name' => 'Enterprise',
-        'price' => 49,
+        'price' => 49.50,
         'currency' => 'USD',
         'billing_cycle' => 'month',
         'stripe_price_id' => $stripePriceIdEnterprise,
