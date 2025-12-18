@@ -25,13 +25,9 @@ class Subscription {
      * @return int|null Item limit, or null for unlimited
      */
     public function getItemLimit($planName) {
-        $limits = [
-            'free' => 5,
-            'pro' => 50,
-            'enterprise' => null // unlimited
-        ];
-        
-        return $limits[$planName] ?? 5; // Default to free tier limit
+        // Items are now unlimited for all plans - gating is based on contacts
+        $plans = PRICING_PLANS;
+        return $plans[$planName]['item_limit'] ?? null;
     }
     
     /**

@@ -107,19 +107,19 @@ define('PRICING_PLANS', [
         'currency' => 'USD',
         'billing_cycle' => 'month',
         'stripe_price_id' => null,
-        'item_limit' => 5,
+        'item_limit' => null, // unlimited
         'contact_limit' => 30,
-        'features' => ['All features included']
+        'features' => ['Up to 30 contacts', 'Contact management', 'Interaction tracking', 'Social stats tracking']
     ],
     'pro' => [
         'name' => 'Pro',
-        'price' => 19,
+        'price' => 9.50,
         'currency' => 'USD',
         'billing_cycle' => 'month',
         'stripe_price_id' => $stripePriceIdPro,
-        'item_limit' => 50,
-        'contact_limit' => 200,
-        'features' => ['All features included']
+        'item_limit' => null, // unlimited
+        'contact_limit' => 500,
+        'features' => ['Up to 500 contacts', 'All Free features', 'Priority support', 'Export to CSV/JSON']
     ],
     'enterprise' => [
         'name' => 'Enterprise',
@@ -129,7 +129,8 @@ define('PRICING_PLANS', [
         'stripe_price_id' => $stripePriceIdEnterprise,
         'item_limit' => null, // unlimited
         'contact_limit' => null, // unlimited
-        'features' => ['All features included']
+        'ai_features' => true,
+        'features' => ['Unlimited contacts', 'All Pro features', 'AI Features (coming soon)', 'Dedicated support']
     ]
 ]);
 

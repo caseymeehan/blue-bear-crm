@@ -401,10 +401,11 @@ $plans = PRICING_PLANS;
                 <div class="plan-billing">Perfect for getting started</div>
                 
                 <ul class="plan-features">
-                    <li>Up to 5 items</li>
-                    <li>Basic features</li>
-                    <li>Community support</li>
-                    <li>Email notifications</li>
+                    <li>Up to 30 contacts</li>
+                    <li>Contact management</li>
+                    <li>Interaction tracking</li>
+                    <li>Social stats tracking</li>
+                    <li>Pipeline management</li>
                 </ul>
                 
                 <?php if ($user && $currentPlan === 'free'): ?>
@@ -412,7 +413,7 @@ $plans = PRICING_PLANS;
                 <?php elseif ($user): ?>
                     <a href="<?php echo url('dashboard/profile.php'); ?>" class="plan-cta secondary">Manage Plan</a>
                 <?php else: ?>
-                    <a href="<?php echo url('auth/google-login.php'); ?>" class="plan-cta secondary">Get Started</a>
+                    <a href="<?php echo url('auth/google-login.php'); ?>" class="plan-cta secondary">Get Started Free</a>
                 <?php endif; ?>
             </div>
 
@@ -425,18 +426,17 @@ $plans = PRICING_PLANS;
                 
                 <div class="plan-name">Pro</div>
                 <div class="plan-price">
-                    $<?php echo $plans['pro']['price']; ?>
+                    $<?php echo number_format($plans['pro']['price'], 2); ?>
                     <small>/month</small>
                 </div>
-                <div class="plan-billing">For growing teams</div>
+                <div class="plan-billing">For growing creators</div>
                 
                 <ul class="plan-features">
-                    <li>Up to 50 items</li>
-                    <li>Advanced features</li>
+                    <li>Up to 500 contacts</li>
+                    <li>All Free features</li>
                     <li>Priority support</li>
-                    <li>Custom branding</li>
-                    <li>Analytics dashboard</li>
-                    <li>API access</li>
+                    <li>Export to CSV/JSON</li>
+                    <li>Advanced analytics</li>
                 </ul>
                 
                 <?php if ($user && $currentPlan === 'pro'): ?>
@@ -461,16 +461,14 @@ $plans = PRICING_PLANS;
                     $<?php echo $plans['enterprise']['price']; ?>
                     <small>/month</small>
                 </div>
-                <div class="plan-billing">For large organizations</div>
+                <div class="plan-billing">For power users</div>
                 
                 <ul class="plan-features">
-                    <li>Unlimited items</li>
+                    <li>Unlimited contacts</li>
                     <li>All Pro features</li>
+                    <li>AI Features <span style="color: #6366f1; font-size: 0.75rem;">(coming soon)</span></li>
                     <li>Dedicated support</li>
-                    <li>SLA guarantee</li>
-                    <li>Custom integrations</li>
-                    <li>Advanced security</li>
-                    <li>Team management</li>
+                    <li>Early access to new features</li>
                 </ul>
                 
                 <?php if ($user && $currentPlan === 'enterprise'): ?>
@@ -496,8 +494,8 @@ $plans = PRICING_PLANS;
         </div>
         
         <div class="faq-item">
-            <h3>What happens if I exceed my item limit?</h3>
-            <p>You'll be prompted to upgrade to a higher tier before creating additional items. Your existing items remain safe and accessible.</p>
+            <h3>What happens if I exceed my contact limit?</h3>
+            <p>You'll be prompted to upgrade to a higher tier before adding additional contacts. Your existing contacts remain safe and accessible.</p>
         </div>
         
         <div class="faq-item">
