@@ -5,5 +5,5 @@ nixPkgs = ["php82", "php82Packages.composer"]
 cmds = ["composer install --optimize-autoloader --no-interaction"]
 
 [start]
-cmd = "php -S 0.0.0.0:${PORT:-8080}"
+cmd = "php database/run_migrations.php && php -S 0.0.0.0:${PORT:-8080}"
 

@@ -539,39 +539,6 @@ $pageTitle = 'Contacts';
         .stage-badge.active_partner { background: #d1fae5; color: #065f46; }
         .stage-badge.churned { background: #fee2e2; color: #991b1b; }
 
-        /* Social Icons */
-        .social-icons {
-            display: flex;
-            gap: 0.5rem;
-            margin-top: 1rem;
-            padding-top: 0.75rem;
-            border-top: 1px solid #f3f4f6;
-        }
-
-        .social-icon {
-            width: 28px;
-            height: 28px;
-            border-radius: 6px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-decoration: none;
-            transition: opacity 0.2s;
-        }
-
-        .social-icon:hover {
-            opacity: 0.8;
-        }
-
-        .social-icon.linkedin { background: #0077b5; }
-        .social-icon.twitter { background: #1da1f2; }
-        .social-icon.youtube { background: #ff0000; }
-        .social-icon.instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
-        .social-icon.tiktok { background: #000000; }
-
         /* Empty State */
         .empty-state {
             text-align: center;
@@ -911,32 +878,6 @@ $pageTitle = 'Contacts';
                                 <?php echo escape($stages[$contact['stage']]['name'] ?? $contact['stage']); ?>
                             </span>
                         </div>
-                        
-                        <?php 
-                        // Check if any social links exist
-                        $hasSocial = $contact['linkedin_url'] || $contact['twitter_handle'] || 
-                                     $contact['youtube_channel'] || $contact['instagram_handle'] || 
-                                     $contact['tiktok_handle'];
-                        ?>
-                        <?php if ($hasSocial): ?>
-                            <div class="social-icons" onclick="event.stopPropagation();">
-                                <?php if ($contact['linkedin_url']): ?>
-                                    <a href="<?php echo escape($contact['linkedin_url']); ?>" target="_blank" class="social-icon linkedin" title="LinkedIn">Li</a>
-                                <?php endif; ?>
-                                <?php if ($contact['twitter_handle']): ?>
-                                    <a href="https://twitter.com/<?php echo escape(ltrim($contact['twitter_handle'], '@')); ?>" target="_blank" class="social-icon twitter" title="Twitter">X</a>
-                                <?php endif; ?>
-                                <?php if ($contact['youtube_channel']): ?>
-                                    <a href="<?php echo escape($contact['youtube_channel']); ?>" target="_blank" class="social-icon youtube" title="YouTube">YT</a>
-                                <?php endif; ?>
-                                <?php if ($contact['instagram_handle']): ?>
-                                    <a href="https://instagram.com/<?php echo escape(ltrim($contact['instagram_handle'], '@')); ?>" target="_blank" class="social-icon instagram" title="Instagram">IG</a>
-                                <?php endif; ?>
-                                <?php if ($contact['tiktok_handle']): ?>
-                                    <a href="https://tiktok.com/@<?php echo escape(ltrim($contact['tiktok_handle'], '@')); ?>" target="_blank" class="social-icon tiktok" title="TikTok">TT</a>
-                                <?php endif; ?>
-                            </div>
-                        <?php endif; ?>
                     </a>
                 <?php endforeach; ?>
             </div>
@@ -1003,13 +944,6 @@ $pageTitle = 'Contacts';
                         }, 300);
                     }
                 }, 5000);
-            });
-        });
-
-        // Prevent social icons from navigating to contact detail
-        document.querySelectorAll('.social-icons a').forEach(function(link) {
-            link.addEventListener('click', function(e) {
-                e.stopPropagation();
             });
         });
     </script>
